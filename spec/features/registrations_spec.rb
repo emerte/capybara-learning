@@ -22,12 +22,6 @@ RSpec.feature "User Registration", type: :feature do
     # should still see 'Sign in' and 'Sign up'
     # should not see 'Profile' or 'Sign out'
     it "shows the correct navigation links" do
-      # expect(page).to have_content("Sign in")
-      # expect(page).to have_content("Sign up")
-      # expect(page).not_to have_content("Profile")
-      # expect(page).not_to have_content("Sign out")
-      # find.link('Sign in').visible?
-      #find.link('Sign up').visible?
       expect(page).to have_link("Sign in")
       expect(page).to have_link("Sign up")
       expect(page).not_to have_link("Profile")
