@@ -3,7 +3,7 @@ Feature: User Session
   Background:
     Given There exists following users
       | Name               | Password |
-      | 'jill@example.com' | password |
+      | jill@example.com   | password |
     And I go to main page
     And I click in navbar "Sign in"
 
