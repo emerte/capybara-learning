@@ -8,7 +8,7 @@ Given(/^I go to main page$/) do
 end
 
 Given(/^I click in navbar "(.*?)"$/) do |arg1|
-  within('.navbar') { click_link('Sign in') }
+  within('.navbar') { click_link(arg1) }
 end
 
 When(/^I fill "(.*?)" field with "(.*?)"$/) do |field, value|
