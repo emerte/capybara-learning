@@ -1,11 +1,6 @@
 When(/^I click link "(.*?)"$/) do |arg1|
-  visit('/users/sign_in')
-  fill_in('Email', with: 'jill@example.com')
-  fill_in('Password', with: 'Password')
-  find_button('Sign in').click
   visit('/users/edit')
-  #binding.pry
-  find_button(arg1).click
+  find_link(arg1).click
 end
 
 Then(/^I should see goodbye message$/) do
